@@ -1,0 +1,12 @@
+name: Shell Commands
+on: [push]
+jobs:
+  run-shell-command:
+    runs-on: [linux, medium]
+    steps:
+      - name: echo a string
+        run: echo "Hello World"
+      - name: multipleline script
+        run: |
+          node -v
+          npm -v
